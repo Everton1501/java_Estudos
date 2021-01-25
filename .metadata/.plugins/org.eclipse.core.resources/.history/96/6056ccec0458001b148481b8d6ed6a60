@@ -1,0 +1,24 @@
+package colecoes;
+
+public class Sistema {
+	
+	public static void main(String[] args) {
+		
+		CLiente cliente1 = new Cliente("Ana Juilia");
+		
+		
+	}
+	
+	
+		
+		
+
+		
+		
+		
+		
+	
+	
+}
+		
+		

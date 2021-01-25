@@ -1,0 +1,26 @@
+package colecoes;
+
+import java.util.ArrayList;
+
+public class Compras {
+	
+	ArrayList<Item> itens = new ArrayList<Item>();
+	
+	void AdicionarItem(Produto p, int qtde) {
+		this.itens.add(new Item(p,qtde));
+	}
+	
+	void AdicionarItem(String nome, double preco, int qtde) {
+		var produto = new Produto(nome, preco);
+		this.itens.add(new Item(produto, qtde));
+	}
+	
+	void adcionarDesconto (String nome, double preco, int qtde, int desconto) {
+		var produto = new Produto(nome, preco);
+		this.itens.add(new Item(produto,qtde,desconto));
+	}
+	
+	
+	
+	
+}

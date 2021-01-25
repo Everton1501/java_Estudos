@@ -1,0 +1,61 @@
+package Classe;
+
+public class ValorVsReferencia {
+	
+	public static void main(String[] args) {
+//..........................................................................................		
+		//EXEMPLO DE ATRIBUIÇÃO POR VALOR
+		double a = 2;
+		double b = a; //Atribuição por Valor (TIPO PRIMITIVO)
+		
+		/* AS VARIAVEIS FORAM ALTERADAS MAS COMO É ATRIBUIÇÃO POR VALOR, QUALQUER ALTERAÇÃO
+		 * ALTERA NA PRÓPRIA VÁRIAVEL, A OUTRA NÃO MUDA CONFORME OS EXEMPLOS ABAIXO.
+		 */
+		a++;
+		b--;
+//..........................................................................................			
+		// EXEMPLO DE ATRIBUIÇÃO POR REFERÊNCIA
+		Data d1 = new Data(10, 01, 2021);
+		Data d2 = d1; //Atribuição por Referência (OBJETO)
+		
+		/*QUALQUER ALTERAÇÃO EM QUALQUER UMA DAS INTÂNCIAS d1 OU d2, ALTERA O OBJETO 
+		 * E O OBJETO, VALE PARA OS 2 QUALQUER ALTERAÇÃO MUDA NAS DUAS, PORQUE COMPARTILHA 
+		 * O OBJETO E NÃO O VALOR.
+		 */
+		d1.dia = 5;
+		d2.mes = 1;
+		
+		System.out.println(a + " " + b);
+		System.out.println(d1.obterDataFormatada());
+		System.out.println(d2.obterDataFormatada());
+//..........................................................................................		
+		/* OBSERVA-SE QUE O METODO (voltarDataParaValorPadrao) FOI ATRIBUIDO A INSTÂNCIA (d1)
+		 * O QUE ALTEROU AS DUAS INSTÂNCIAS (d1 E d2). SALIENTANDO QUE EM CIMA CONTINUA COM
+		 * RESULTADO DIVERSO, PQ FOI IMPRESSO ANTES DA ALTERAÇÃO DESSE OUTRO OBJETO.
+		 */
+		voltarDataParaValorPadrao(d1);
+		
+		System.out.println(d1.obterDataFormatada());
+		System.out.println(d2.obterDataFormatada());
+//..........................................................................................
+		/*NO CASO DOS PRIMITIVOS, MESMO QUE SE CRIA UM METODO O VALOR NÃO GERA IMPACTO, POIS
+		 *OS PRIMITIVOS SEMPRE PASSAM A REFERÊNCIA POR VALOR, ENTÃO TUDO QUE SE CRIA COMO
+		 *PARÂMETRO NO MÉTODO, NÃO CAUSA EFEITO. POIS É CRIADO UMA CÓPIA. EM UMA OUTRA ÁREA
+		 *DO COMPUTADOR.
+		 */
+		int c = 5;
+		alterarPrimitivo(c);
+		System.out.println(c);
+//.........................................................................................					
+	}
+	static void voltarDataParaValorPadrao(Data d) {
+		d.dia = 1;
+		d.mes = 1;
+		d.ano = 1970;
+	}
+	// O c++ NÃO ALTERA O VALOR DA VARIAVÉL ACIMA.
+	static void alterarPrimitivo(int c) {
+		c++;
+	}
+	
+}

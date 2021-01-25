@@ -1,0 +1,34 @@
+package teste;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		int idade = 15;
+		boolean  amigoDoDono= true;
+		
+		if(idade < 18 && amigoDoDono == false ) {
+			System.out.println("Não pode entrar");
+		} else {
+			System.out.println("Pode entrar");
+		}
+		
+		if (idade < 18 || !amigoDoDono);{
+			System.out.println("Não pode entrar");
+		} 
+		
+		
+		for(int i = 0; i < 10; i++) {
+			System.out.println(i);
+		}
+		
+		/* Imprimir todos os números de 150 a 300 */
+		
+		int i =0;
+		if( i >= 150 && i <= 300) {
+			System.out.println(i);
+			i++;
+		}
+			
+	}
+}

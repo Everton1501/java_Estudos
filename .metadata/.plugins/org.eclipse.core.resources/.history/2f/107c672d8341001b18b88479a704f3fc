@@ -1,0 +1,29 @@
+package Classe;
+
+public class Data {
+	
+	int dia;
+	int mes;
+	int ano;
+	
+	Data () {
+		System.out.println("01/01/1970");
+	}
+	
+	String obterDataFormatada() {
+		return String.format("%d/%d/%d", dia, mes, ano);
+	}
+	
+	void imprimirDataFormatada() {
+		System.out.printf("%d/%d/%d", dia, mes, ano);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

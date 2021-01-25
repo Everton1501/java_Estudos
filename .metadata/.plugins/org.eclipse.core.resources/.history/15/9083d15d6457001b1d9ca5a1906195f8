@@ -1,0 +1,21 @@
+package colecoes;
+
+public class Item {
+	
+	Produto produto;
+	int quantidade;
+	int desconto;
+	
+	Item(Produto produto, int quantidade) {
+		this.produto = produto;
+		this.quantidade = quantidade;
+	}
+	
+	Item(Produto produto, int quantidade, int desconto){
+		this.produto = produto;
+		this.quantidade = quantidade;
+		this.desconto = desconto;
+	}
+}
+
+	

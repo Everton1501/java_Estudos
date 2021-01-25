@@ -1,0 +1,28 @@
+package Fundamentos.Operadores;
+
+import java.util.Scanner;
+
+public class IMC {
+
+        public static void main(String[] args) {
+		
+        Scanner entrada = new Scanner (System.in);
+        
+        System.out.print("Digite seu peso: ");
+        double massa = entrada.nextDouble();
+        
+        System.out.print("Digite sua altura: ");
+        double altura = entrada.nextDouble();
+        
+        altura = Math.pow(altura, 2);
+        
+        double IMC = massa / altura;
+        
+        System.out.println("Seu indice de massa corporal é "+ IMC);
+        
+        
+        entrada.close();
+        	
+        	
+		}	
+}

@@ -1,0 +1,24 @@
+package colecoes;
+
+import java.util.HashSet;
+
+public class ConjuntoBaguncado {
+	
+	public static void main(String[] args) {
+		
+		HashSet conjunto = new HashSet();
+		
+		/*Nesse caso os valores PRIMITIVOS já são transformados em wrappers, então o valor 1.2 foi
+		 * salvo em Double, o boolean em Boolean, a String é String mesmo, o número int 1 para Integer
+		 * e o char 'x' para Character
+		 */
+		conjunto.add(1.2);
+		conjunto.add(true);
+		conjunto.add("Teste");
+		conjunto.add(1);
+		conjunto.add('x');
+		
+		System.out.println(conjunto.size());
+	}
+
+}

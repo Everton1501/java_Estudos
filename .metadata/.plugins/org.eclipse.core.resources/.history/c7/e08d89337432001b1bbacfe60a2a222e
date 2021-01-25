@@ -1,0 +1,23 @@
+package Fundamentos.Operadores;
+
+import java.util.Scanner;
+
+public class FahrenheitToCelsius {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.print("Digite quantos ° fahrenheit: ");
+		double f = entrada.nextDouble();
+		
+		double c = (f-32)x 5/9;
+		
+		System.out.printf("%.2f graus fahrenheit são %.2f graus celsius "
+				, f, c);
+		
+		entrada.close();
+				
+	}
+
+}

@@ -1,0 +1,16 @@
+package oo.polimorfismo;
+
+public class Jantar {
+
+	public static void main(String[] args) {
+		
+		Pessoa convidado1 = new Pessoa(80);
+		
+		convidado1.comer(0.25, 0.18, 0.80);
+		
+		
+		
+		
+		
+	}
+}

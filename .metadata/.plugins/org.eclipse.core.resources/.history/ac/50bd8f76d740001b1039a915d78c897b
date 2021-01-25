@@ -1,0 +1,46 @@
+package Classe;
+
+public class Produto {
+
+	String nome;
+	double preco;
+	double desconto;
+	
+	
+	
+	
+	
+	//CONSTRUTOR IMPLICITO, NÃO NECESSITA DE PARÂMETRO
+	Produto (){
+		
+	}
+
+	//CONSTRUTOR EXPLICITO, TEM QUE ESCREVER NO PARÂMETRO A INFORMAÇÃO
+	Produto (String nomeInicial, double descontoInicial, double precoInicial){
+		nome = nomeInicial;
+		preco = precoInicial;
+		desconto = descontoInicial;
+	}
+	
+	
+	double precoComDesconto() {
+		return preco * (1 - desconto);
+	}
+	
+	/*OBS 1: O NOME DO METODO É O MESMO, O QUE ALTERA É A QUANTIDADE DE PARAMETROS
+	 * O DE CIMA TEM 2 PARAMETROS, JA CONTIDOS NO PROGRAMA. O DE BAIXO O ULTIMO ESTA 
+	 * DESCRITO NO PARAMETRO DO METODO
+	 * OBS 2: PARA DETERMINAR UM FLOAT PRECISA CRIAR UM CAST (float)
+	 */
+	
+	double precoComDesconto(double descontoDoGerente) {
+		return  preco * (1 - desconto + descontoDoGerente);
+	}
+	//float precoComDesconto(double descontoDoGerente) {
+	//	return (float) (preco * (1 - desconto + descontoDoGerente));
+	
+
+
+
+}
+

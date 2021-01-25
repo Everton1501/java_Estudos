@@ -1,0 +1,14 @@
+package oo.heranca.desafio;
+
+public class Luxo {
+	
+	void ligarAr() {
+		
+	}
+	
+	 void desligarAr() {
+		
+	 }
+	
+
+}

@@ -1,0 +1,16 @@
+package colecoes;
+
+public class Produto {
+	
+	String nome;//nome do produto
+	double preco; // preço do produto
+	
+	Produto(String nome, double preco) {
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+	
+}
+	
+	

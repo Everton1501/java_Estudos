@@ -1,0 +1,37 @@
+package colecoes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+	
+	String nome;// nome do cliente
+	List<Compras> compras = new ArrayList<Compras>();//lista que interage com o Compras
+	
+	Cliente(String nome) {//Construtor para o nome do cliente
+		this.nome = nome;
+	}
+	
+	void adcionarCompra(Compras compras) {
+		this.compras.add(compras);
+	}
+	
+	double obterValorTotal() {
+		double total = 0;
+		
+		for(Compras compra: compras) {
+			total += compra.valorTotal();
+		}
+		
+		return total;
+	}
+	double obterValorTotalComDesconto() {
+		double total = 0;
+		
+		for(Compras compra: compras) {
+			total += compra.valorTotalComDesconto();
+		}
+		
+		return total;
+	}
+}

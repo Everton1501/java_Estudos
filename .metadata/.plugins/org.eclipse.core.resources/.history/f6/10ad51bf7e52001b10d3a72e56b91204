@@ -1,0 +1,18 @@
+package colecoes;
+
+public class Sistema {
+	
+	public static void main(String[] args) {
+		
+	Cliente cliente = new Cliente("Ana Julia");
+	Compras compra1 = new Compras();
+	Compras compra2 = new Compras();
+	
+	compra1.adcionarItem(new Item("Caneta", 1.5), 100);
+	
+	
+
+	}
+}
+		
+		

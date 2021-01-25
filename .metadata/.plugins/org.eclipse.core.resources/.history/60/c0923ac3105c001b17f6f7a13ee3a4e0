@@ -1,0 +1,28 @@
+package teste;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		int idade = 15;
+		boolean  amigoDoDono= true;
+		
+		if(idade < 18 && amigoDoDono == false ) {
+			System.out.println("Não pode entrar");
+		} else {
+			System.out.println("Pode entrar");
+		}
+		
+		if (idade < 18 || !amigoDoDono);{
+			System.out.println("Não pode entrar");
+		} 
+	
+		for (int i = x; i < y; i++) {
+			if (i % 19 == 0) {
+		        System.out.println("Achei um número divisível por 19 entre x e y");
+		        break;
+			}
+		}
+		
+	}
+}

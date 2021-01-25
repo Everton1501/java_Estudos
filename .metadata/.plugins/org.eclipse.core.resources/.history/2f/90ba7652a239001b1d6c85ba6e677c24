@@ -1,0 +1,27 @@
+package Controle;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.print("Digite um número :");
+		int num = entrada.nextInt();
+		
+		if(num <= 10 && num >= 0 && ((num % 2) = 0)) {
+			System.out.println("O número está entre 0 e 10 e é par");
+		}else {
+			System.out.println();
+		}
+		
+		
+		
+		
+		entrada.close();
+		
+	}
+
+}

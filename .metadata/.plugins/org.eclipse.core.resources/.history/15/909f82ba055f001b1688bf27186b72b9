@@ -1,0 +1,31 @@
+package oo.polimorfismo;
+
+public class Pessoa {
+	
+	private double peso;
+	
+	
+	Pessoa(double peso) {
+		setPeso(peso);
+	}
+
+	public double comer(Arroz arroz, Feijao feijao, Carne carne) {
+		this.peso += arroz.getPeso() + feijao.getPeso() + carne.getPeso();
+		return this.peso;
+	}
+	
+	public void sobremesa(Sorvete sorvete) {
+		this.peso =+ sorvete.getPeso();
+	}
+	
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		if(peso >= 0) {
+		this.peso = peso;
+		}
+	}
+
+}

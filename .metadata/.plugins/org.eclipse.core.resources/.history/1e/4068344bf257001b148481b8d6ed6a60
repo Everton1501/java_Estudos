@@ -1,0 +1,15 @@
+package colecoes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Compras {
+	
+	int desconto;
+	List<Item> item = new ArrayList<Item>();
+	
+	void adcionarItem(Produto p, int qtde) {
+		this.item.add(new Item(p, qtde));
+	}
+	
+}

@@ -1,0 +1,24 @@
+package oo.heranca.desafio;
+
+public class Carro {
+	
+	int velocidadeAtual;
+	int aceleracao = 5;
+	int freio = 5;
+	
+	Carro(){
+	}
+	
+	Carro(int velocidadeAtual) {
+		this.velocidadeAtual = velocidadeAtual;
+	}
+	
+	int acelerar(int velocidadeAtual, int aceleracao) {
+		this.velocidadeAtual = velocidadeAtual;
+		this.aceleracao = aceleracao;
+		int total = velocidadeAtual + aceleracao;
+		
+		return total;
+	}
+
+}

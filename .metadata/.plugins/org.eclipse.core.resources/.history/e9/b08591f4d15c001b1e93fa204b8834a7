@@ -1,0 +1,25 @@
+package oo.heranca.desafio;
+
+public class Sistema {
+	
+	public static void main(String[] args) {
+		
+		Ferrari ferrari = new Ferrari();
+		Civic civic = new Civic();
+		
+		ferrari.velocidadeAtual = 100;
+		
+		ferrari.acelerar();
+		
+		civic.velocidadeAtual = 100;
+		
+		civic.aceleracao = 2;
+		
+		
+		
+		System.out.println(ferrari.acelerar());
+		
+		System.out.println(civic.acelerar());
+	
+	}
+}

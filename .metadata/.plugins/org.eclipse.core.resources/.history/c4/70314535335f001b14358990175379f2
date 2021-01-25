@@ -1,0 +1,14 @@
+package lambdas;
+
+public class Soma implements Calculo {
+	
+	@Override
+	public double executar(double a, double b) {
+		double total;
+		total = a + b;
+		return total;
+	}
+	
+	
+
+}

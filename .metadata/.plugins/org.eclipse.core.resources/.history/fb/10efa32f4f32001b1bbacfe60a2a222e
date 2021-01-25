@@ -1,0 +1,36 @@
+package Fundamentos.Operadores;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.print("Digite um número: ");
+		double num1 = entrada.nextDouble();
+		
+		System.out.print("Digite um outro número: ");
+		double num2 = entrada.nextDouble();
+		
+		System.out.print("digite o operador :");
+		String operador = entrada.next();
+		
+		if (operador == "+") {
+			System.out.println( num1 + num2);
+			} else if (operador == "-") {
+			System.out.println(num1 - num2);
+			} else if (operador == "*") {
+				System.out.println(num1 * num2);
+			} else if (operador == "/") {
+				System.out.println(num1 / num2);
+			} else if (operador == "%") {
+				System.out.println(num1 % num2);
+			}
+		
+				
+		entrada.close();
+		
+	}
+}

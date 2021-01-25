@@ -1,0 +1,13 @@
+package colecoes;
+
+public class Sistema {
+	
+	public static void main(String[] args) {
+		
+		
+		Compras compra1 = new Compras();
+		Compras compra2 = new Compras();
+		Cliente cliente = new Cliente();
+	}
+
+}

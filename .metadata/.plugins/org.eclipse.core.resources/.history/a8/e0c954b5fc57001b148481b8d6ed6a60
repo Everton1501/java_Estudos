@@ -1,0 +1,11 @@
+package colecoes;
+
+import java.util.ArrayList;
+
+public class Cliente {
+	
+	String nome;
+	ArrayList<Compras> compras = new ArrayList<Compras>();
+	
+
+}

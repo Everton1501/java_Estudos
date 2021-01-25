@@ -1,0 +1,20 @@
+package Fundamentos.Operadores;
+
+public class DesafioLogicos {
+    public static void main(String[] args) {
+		
+    	
+    	boolean trabalho1 = true;
+    	boolean trabalho2 = true;
+    	
+    	boolean dois = trabalho1 && trabalho2;
+    	boolean um = trabalho1 ^ trabalho2;
+    
+    	System.out.println(dois + " "
+    			+ "A familia foi tomar sorvete");
+    	System.out.println(dois + ""
+    			+ "Comprou a TV 50 polegadas");
+    	
+    	
+	}
+}

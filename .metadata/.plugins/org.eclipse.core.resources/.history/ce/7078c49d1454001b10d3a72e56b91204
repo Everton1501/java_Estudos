@@ -1,0 +1,16 @@
+package colecoes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+	
+	String nome;// nome do cliente
+	List<Compras> compras = new ArrayList<Compras>();//lista que interage com o Compras
+	
+	Cliente(String nome) {//Construtor para o nome do cliente
+		this.nome = nome;
+	}
+	
+	
+}

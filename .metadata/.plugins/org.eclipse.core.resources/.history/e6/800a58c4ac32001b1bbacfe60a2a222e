@@ -1,0 +1,25 @@
+package Fundamentos.Operadores;
+
+import java.util.Scanner;
+
+public class AreaTriangulo {
+  
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.print("Digite a base do triângulo: ");
+		double b = entrada.nextDouble();
+		
+		System.out.print("Digite a Altura do triângulo: ");
+		double h = entrada.nextDouble();
+		
+		double a = (b*h)/2;
+		
+		System.out.println("A área do triângulo é " + a);
+	
+		
+		
+		entrada.close();
+	}
+}

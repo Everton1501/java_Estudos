@@ -1,0 +1,64 @@
+package oo.heranca.sistema;
+
+import oo.heranca.Direcao;
+import oo.heranca.Heroi;
+import oo.heranca.Monstro;
+
+public class Jogo {		
+	
+	public static void main(String[] args) {
+		
+		Heroi heroi = new Heroi();
+		Monstro monstro = new Monstro();
+		heroi.x=10;
+		heroi.y=9;
+		monstro.x= 11;
+		monstro.y= 10;
+		
+		
+		heroi.andar(Direcao.Norte);
+		heroi.atacarJogador(monstro);		
+		System.out.println("vida jogador 1 "+heroi.life);
+		System.out.println("vida jogador 2 "+monstro.life);
+		
+		monstro.andar(Direcao.Oeste);
+		monstro.atacarJogador(heroi);		
+		System.out.println("vida jogador 1 "+heroi.life);
+		System.out.println("vida jogador 2 "+monstro.life);
+		
+		heroi.andar(Direcao.Leste);
+		
+		monstro.andar(Direcao.Leste);
+		monstro.atacarJogador(heroi);		
+		System.out.println("vida jogador 1 "+heroi.life);
+		System.out.println("vida jogador 2 "+monstro.life);
+		System.out.println(heroi.x);
+		System.out.println(heroi.y);
+		System.out.println(monstro.x);
+		System.out.println(monstro.y);
+		
+		heroi.andar(Direcao.Sul);
+		heroi.atacarJogador(monstro);		
+		System.out.println("vida jogador 1 "+heroi.life);
+		System.out.println("vida jogador 2 "+monstro.life);
+		
+		heroi.andar(Direcao.Norte);
+		monstro.andar(Direcao.Oeste);
+		heroi.andar(Direcao.Leste);
+		monstro.andar(Direcao.Leste);
+		heroi.andar(Direcao.Sul);
+		monstro.andar(Direcao.Norte);
+		heroi.andar(Direcao.Oeste);
+		monstro.andar(Direcao.Leste);
+		heroi.andar(Direcao.Leste);
+		monstro.andar(Direcao.Sul);
+		
+		System.out.println(heroi.x);
+		System.out.println(heroi.y);
+		System.out.println(monstro.x);
+		System.out.println(monstro.y);
+	}
+	
+}
+
+

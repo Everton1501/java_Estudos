@@ -1,0 +1,33 @@
+package colecoes;
+
+public class Sistema {
+	
+	public static void main(String[] args) {
+		
+		Cliente cliente = new Cliente("Ana Bia Lia");
+		Compras compra1 = new Compras();
+		Compras compra2 = new Compras();
+		Compras compra3 = new Compras();
+		
+		compra1.adicionarItem("Caneta", 1.5, 100);
+		compra1.adicionarItem("Borracha", 0.5, 10);
+		
+		compra2.adicionarItem("Lápis", 1, 100);
+		compra2.adicionarItem("Caderno", 22.5, 4);
+		
+		compra3.adicionarItem("Notebook", 2000, 1);
+		compra3.adicionarItem("Impressora", 1200, 1);
+		
+		cliente.adcionarCompra(compra1);
+		cliente.adcionarCompra(compra2);
+		cliente.adcionarCompra(compra3);
+		
+		System.out.println(cliente.nome + " gastou ao todo " + cliente.obterValorTotal());
+		
+		
+	}
+	
+
+}
+		
+		

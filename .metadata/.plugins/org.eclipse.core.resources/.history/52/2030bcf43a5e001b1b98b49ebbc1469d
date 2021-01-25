@@ -1,0 +1,39 @@
+package oo.heranca;
+
+public class Heroi extends Jogador {
+
+ /*O (extends) que é uma palavra reservarda é a determinação da Herança de um determinada classe.
+* que no caso é o (Jogador) devido isso pode ser usado no metodo main trocando o próprio construtor
+* no caso de: 
+* Jogador j1 = new Jogador();
+* Heroi j1 = new Heroi();
+* os dois servem e podem ser usados, que irão possuir as mesmas funcionalidades. 
+*/
+	
+	
+	// NESSE EXEMPLO COPIANDO DO MÉTODO PAI, CONSEGUE ALTERAR O VALOR DE  CADA ATAQUE
+		boolean atacarJogador(Jogador oponente){
+			
+			int deltaX = Math.abs(x - oponente.x);
+			int deltaY = Math.abs(y - oponente.y);
+			
+			if(deltaX == 0 && deltaY == 1) {
+				oponente.life -= 20;
+				return true;
+			}else if(deltaY == 0 && deltaX ==1) {
+				oponente.life -= 20;
+				return true;
+			}else {
+				return false;
+			}
+		}
+		
+	// UMA OUTRA FORMA É CHAMANDO O METODO PAI, PELO SUPER.
+		
+		//boolean atacarJogador(Jogador oponente) {
+		//	boolean ataque1 = super.atacarJogador(oponente);
+		//	boolean ataque2 = super.atacarJogador(oponente);
+		//	return ataque1 || ataque2;
+		//}
+		
+}

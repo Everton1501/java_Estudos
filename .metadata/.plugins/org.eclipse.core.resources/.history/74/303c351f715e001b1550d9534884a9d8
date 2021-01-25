@@ -1,0 +1,30 @@
+package oo.encapsulamento;
+
+public class Pessoa {
+	
+	private String nome;
+	private int idade;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public Pessoa (int idade) { // foi passado como parâmetro Setidade que é um metodo void
+		setIdade(idade);        // pois possui parâmetros para evitar q o usuário final digite  
+	}							// dentro do construtor evitando uma idade inválida seja lida pelo
+								// pelo programa.
+	
+	public int getIdade() { // o metodo get é o que ler o valor.
+		return idade;
+	}
+	public void setIdade(int novaIdade) {  // o metodo set é o que altera o valor.
+		novaIdade = Math.abs(idade);
+		if (novaIdade >= 0 && novaIdade <= 120) {
+			this.idade = novaIdade;
+		}
+	}
+
+}

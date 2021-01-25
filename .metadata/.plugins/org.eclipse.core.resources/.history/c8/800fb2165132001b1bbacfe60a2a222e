@@ -1,0 +1,30 @@
+package Fundamentos.Operadores;
+
+import javax.swing.JOptionPane;
+
+public class DesafioCalculadora {
+	
+	public static void main(String[] args) {
+		
+		String num1 = JOptionPane.showInputDialog(
+				"Digite o primeiro número: ");
+		String num2 = JOptionPane.showInputDialog(
+				"Digite o segundo número: ");
+		String operador = JOptionPane.showInputDialog(
+				"Digite o operador: ");
+		
+		double valor1 = Double.parseDouble(num1);
+		double valor2 = Double.parseDouble(num2);
+		double operacao = Double.parseDouble(operador);
+		double resultado = valor1 + operacao + valor2;
+		
+		System.out.println(resultado);
+		
+		
+		
+				
+				
+		
+		
+	}
+}

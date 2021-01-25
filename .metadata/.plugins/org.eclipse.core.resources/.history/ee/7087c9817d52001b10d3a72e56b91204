@@ -1,0 +1,14 @@
+package colecoes;
+
+public class Item {
+	
+	Produto produto;
+	int quantidade;
+	
+	Item(String nome, double quantidade) {
+		this.produto = nome;
+		this.quantidade = quantidade;
+	}
+}
+
+	

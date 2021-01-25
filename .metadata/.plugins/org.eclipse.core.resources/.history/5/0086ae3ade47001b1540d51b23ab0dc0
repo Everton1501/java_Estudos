@@ -1,0 +1,52 @@
+package While;
+
+import java.util.Scanner;
+
+public class Exercicio52 {
+
+	/*52) Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final:
+		a) Qual é a média de idade do grupo
+	b) Quantas pessoas tem mais de 18 anos
+	c) Quantas pessoas tem menos de 5 anos
+	d) Qual foi a maior idade lida
+	 */	
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		String[] nome= new String [10];
+		int[] idade = new int [10]
+ 		
+		for(int i = 0; i < 10; i++) {
+			System.out.print("Digite seu nome: ");
+			nome[i] = entrada.next();
+			
+			System.out.print("Digite sua idade: ");
+			idade[i] = entrada.nextInt();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		entrada.close();
+		 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
